@@ -27,5 +27,7 @@ https://github.com/rusdy-cyber/mobile-developer.git
 - extension `dart` di visual studio code
 - extension `flutter` di visual studio code
 - extension `code runner` di visual studio code
-- android studio
+> _android studio_
   👉 [unduh](https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQiArrCvBhCNARIsAOkAGcXZSUlPerfAqU4DBZu37eSqlnZY28NITx0xM1m7SMVcAK-tObu_mmAaAkjxEALw_wcB&gclsrc=aw.ds&hl=id) 👈
+
+> _melakukan penambahan enviterment bin flutter_
