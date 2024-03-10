@@ -30,4 +30,7 @@ https://github.com/rusdy-cyber/mobile-developer.git
 > _android studio_
   👉 [unduh](https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQiArrCvBhCNARIsAOkAGcXZSUlPerfAqU4DBZu37eSqlnZY28NITx0xM1m7SMVcAK-tObu_mmAaAkjxEALw_wcB&gclsrc=aw.ds&hl=id) 👈
 
+> _visual studio code_
+  👉 [unduh](https://code.visualstudio.com/) 👈
+
 > _melakukan penambahan enviterment bin flutter_
