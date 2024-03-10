@@ -21,10 +21,11 @@ https://github.com/rusdy-cyber/mobile-developer.git
 ### instalasi
 > _Archive SDK dart_
 👉 [unduh](https://dart.dev/get-dart/archive) 👈
+
 >  _Archive SDK Flutter_
 👉 [unduh](https://docs.flutter.dev/get-started/install/windows/mobile?tab=download) 👈
-- extension dart di visual studio code
-- extension flutter di visual studio code
-- extension code runner di visual studio code
+- extension `dart` di visual studio code
+- extension `flutter` di visual studio code
+- extension `code runne`r di visual studio code
 - android studio
   👉 [unduh](https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQiArrCvBhCNARIsAOkAGcXZSUlPerfAqU4DBZu37eSqlnZY28NITx0xM1m7SMVcAK-tObu_mmAaAkjxEALw_wcB&gclsrc=aw.ds&hl=id) 👈
