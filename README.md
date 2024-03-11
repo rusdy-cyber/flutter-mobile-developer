@@ -10,7 +10,7 @@ halaman `akun utama` & `repository lainnya`, tekan ↓↓
 > _jumlah pengunjung_
 
 - **Pengunjung Github @rusdy-cyber**  
-       ![DUMAI-991](https://komarev.com/ghpvc/?username=rusdy-cyber&color=blue)
+       ![`👾uknow👾`](https://komarev.com/ghpvc/?username=rusdy-cyber&color=blue)
   >
 
 
