@@ -33,4 +33,4 @@ https://github.com/rusdy-cyber/mobile-developer.git
 > _`visual studio code`_
   👉 [unduh](https://code.visualstudio.com/) 👈
 
-- melakukan `penambahan envirtrment bin flutter pada bagian path` pada setting computer/pc
+- melakukan `penambahan system environment variables pada bin flutter di bagian path system` pada setting computer/pc
