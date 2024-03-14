@@ -25,16 +25,18 @@ https://github.com/rusdy-cyber/mobile-developer.git
 >  _Archive `SDK Flutter`_
 👉 [unduh](https://docs.flutter.dev/get-started/install/windows/mobile?tab=download) 👈
 
+- extension `dart` di visual studio code
+- extension `flutter` di visual studio code
+- extension `code runner` di visual studio code
+
 **mengatur SDK secara manual :**
 
   - buka visual studio code pada project dart
   - tekan ctrl + shift + P
   - ketikkan `dart` ⇒ kemudian tekan `add Dart SDK to path`
-  - ketikkan `flutter` ⇒ kemudin tekan `add Flutter SDK to path`
+  - ketikkan `flutter` ⇒ kemudin tekan `add Flutter SDK to path` .
 
-- extension `dart` di visual studio code
-- extension `flutter` di visual studio code
-- extension `code runner` di visual studio code
+
 > _`android studio`_
   👉 [unduh](https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQiArrCvBhCNARIsAOkAGcXZSUlPerfAqU4DBZu37eSqlnZY28NITx0xM1m7SMVcAK-tObu_mmAaAkjxEALw_wcB&gclsrc=aw.ds&hl=id) 👈
 
