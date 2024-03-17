@@ -6,13 +6,10 @@ halaman `akun utama` & `repository lainnya`, tekan ↓↓
 
 👉 [`Rusdy-cyber`](https://github.com/rusdy-cyber) 👈
 
-
-> _jumlah pengunjung_
-
-- **Pengunjung Github @rusdy-cyber**  
-       ![`👾uknow👾`](https://komarev.com/ghpvc/?username=rusdy-cyber&color=blue)
-  >
-
+### Informasi cara penggunaan git kunjungi ↓↓ atau tekan 👉 [`kunjungi`](https://github.com/rusdy-cyber/penggunaan-git) 👈
+```
+https://github.com/rusdy-cyber/penggunaan-git
+```
 
 ### clone
 ```
