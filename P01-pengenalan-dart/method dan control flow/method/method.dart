@@ -7,7 +7,7 @@ void main() {
 
   //fungsi main adalah fungsi pertama yang dieksekusi ketika program dijalankan
 
-  String nama = 'nurasmawati';
+  String nama = 'novan';
   perkenalan(nama);
 
   int sisi = 10;

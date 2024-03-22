@@ -2,44 +2,44 @@
 dan bisa diambil kembali nilainya*/
 
 void main() {
-  RekeningBank rekeningElana = new RekeningBank();
-  rekeningElana.namaPemilik = 'Elana Karisma';
-  rekeningElana.namaBank = 'BRI';
-  rekeningElana.saldo = 1000000;
+  RekeningBank rekeningNovan = new RekeningBank();
+  rekeningNovan.namaPemilik = 'novan rsdy';
+  rekeningNovan.namaBank = 'BRI';
+  rekeningNovan.saldo = 1000000;
 
-  print(rekeningElana.saldo);
-  print(rekeningElana.namaBank);
-  print(rekeningElana.namaPemilik);
+  print(rekeningNovan.saldo);
+  print(rekeningNovan.namaBank);
+  print(rekeningNovan.namaPemilik);
 
-  rekeningElana.ceksaldo();
+  rekeningNovan.ceksaldo();
   print('-------------------------');
 
   // membuat objek baru
-  RekeningBank rekeningela = new RekeningBank(
-      namaPemilik: 'Elana Karisma', namaBank: 'BNI', saldo: 50000000);
+  RekeningBank rekeninga = new RekeningBank(
+      namaPemilik: 'novan rsdy', namaBank: 'BNI', saldo: 50000000);
 
-  print(rekeningela.namaPemilik);
-  print(rekeningela.namaBank);
-  print(rekeningela.saldo);
-  rekeningela.ceksaldo();
+  print(rekeninga.namaPemilik);
+  print(rekeninga.namaBank);
+  print(rekeninga.saldo);
+  rekeninga.ceksaldo();
   print('---------------------');
 
-  RekeningBank rekeningKaris = new RekeningBank(
-    namaPemilik: 'Karisma',
+  RekeningBank rekenningRusdy = new RekeningBank(
+    namaPemilik: 'ardi',
     namaBank: 'Bank Syariah',
     saldo: 15000000,
   );
 
-  print(rekeningKaris.getPemilik);
-  print(rekeningKaris.getBank);
-  print(rekeningKaris.saldo);
-  rekeningKaris.setSaldo = 25000000;
-  print(rekeningKaris.saldo);
-  rekeningKaris.setNamaPemilik = 'Elana Karismaaaa';
-  rekeningKaris.setNamaBank = 'BCA';
-  print(rekeningKaris.getPemilik);
-  print(rekeningKaris.getBank);
-  print(rekeningKaris.getSaldo);
+  print(rekenningRusdy.getPemilik);
+  print(rekenningRusdy.getBank);
+  print(rekenningRusdy.saldo);
+  rekenningRusdy.setSaldo = 25000000;
+  print(rekenningRusdy.saldo);
+  rekenningRusdy.setNamaPemilik = 'ardi';
+  rekenningRusdy.setNamaBank = 'BCA';
+  print(rekenningRusdy.getPemilik);
+  print(rekenningRusdy.getBank);
+  print(rekenningRusdy.getSaldo);
 }
 
 class RekeningBank {

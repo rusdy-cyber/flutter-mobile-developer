@@ -45,7 +45,7 @@ void main() {
   print(nama.indexOf('N')); //keluarannya adalah 0
   print(nama.indexOf('u')); //keluarannya adalah 1, karena hanya menampilkan yang paling pertama dijumpai saja
   
-  print(nama.startsWith('Nur')); //keluarannya adalah true
+  print(nama.startsWith('novan')); //keluarannya adalah true
 
   //mengecek apakah diakhiri dengan string/karakter tertentu
   print(nama.endsWith('novan')); //keluarannya adalah true

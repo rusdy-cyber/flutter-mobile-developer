@@ -29,11 +29,11 @@ void main() {
   print(mahasiswa3.length);
 
   // Untuk menambahkan nilai pada suatu list
-  mahasiswa3.add('Azzuhra');
+  mahasiswa3.add('novan');
   print(mahasiswa3);
 
   // Untuk menambahkan list pada list
-  List<String> mahasiswaTambahan = ['Zulfa', 'Putra'];
+  List<String> mahasiswaTambahan = ['rusdy', 'andre'];
   mahasiswa3.addAll(mahasiswaTambahan);
   print(mahasiswa3);
 

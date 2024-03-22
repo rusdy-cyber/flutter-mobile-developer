@@ -1,4 +1,3 @@
-// Asynchronous bukan mengeksekusi berdasarkan urutan dari atas namun berdasarkan waktu
 
 Future<void> main() async {
   print(await printData());

@@ -5,7 +5,7 @@ Penulisan arrow function :
   tanda => bisa disebut sebagai return*/
 
 void main() {
-  String nama = 'Elana Karisma';
+  String nama = 'novan rsdy';
   perkenalan(nama);
 
   int sisi = 10;

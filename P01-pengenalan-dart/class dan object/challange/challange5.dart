@@ -1,17 +1,17 @@
 void main() {
-  EWallet dompetElana = new EWallet('Elana Karisma');
+  EWallet dompetnovan = new EWallet('novan rsdy');
   print('----Nilai Awal----');
-  print(dompetElana.getNama);
-  print(dompetElana.getSaldo);
-  print(dompetElana.getMutasi);
+  print(dompetnovan.getNama);
+  print(dompetnovan.getSaldo);
+  print(dompetnovan.getMutasi);
   print('----Request----');
-  dompetElana.Request(2000000);
-  print(dompetElana.getSaldo);
-  print(dompetElana.getMutasi);
+  dompetnovan.Request(2000000);
+  print(dompetnovan.getSaldo);
+  print(dompetnovan.getMutasi);
   print('---- Transfer----');
-  dompetElana.transfer(500000);
-  print(dompetElana.getSaldo);
-  print(dompetElana.getMutasi);
+  dompetnovan.transfer(500000);
+  print(dompetnovan.getSaldo);
+  print(dompetnovan.getMutasi);
 }
 
 class EWallet {

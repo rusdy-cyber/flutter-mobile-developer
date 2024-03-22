@@ -1,19 +1,19 @@
 void main() {
-  RekeningBank rekeningElana = new RekeningBank();
-  rekeningElana.namaPemilik = 'Elana Karisma';
-  rekeningElana.namaBank = 'BRI';
-  rekeningElana.saldo = 1000000;
+  RekeningBank rekeninngNovan = new RekeningBank();
+  rekeninngNovan.namaPemilik = 'novan';
+  rekeninngNovan.namaBank = 'BRI';
+  rekeninngNovan.saldo = 1000000;
 
-  print(rekeningElana.saldo);
-  print(rekeningElana.namaBank);
-  print(rekeningElana.namaPemilik);
+  print(rekeninngNovan.saldo);
+  print(rekeninngNovan.namaBank);
+  print(rekeninngNovan.namaPemilik);
 
-  rekeningElana.ceksaldo();
+  rekeninngNovan.ceksaldo();
   print('-------------------------');
 
   // membuat objek baru
   RekeningBank rekeningela = new RekeningBank(
-      namaPemilik: 'Elana Karisma', namaBank: 'BNI', saldo: 50000000);
+      namaPemilik: 'novan', namaBank: 'BNI', saldo: 50000000);
 
   print(rekeningela.namaPemilik);
   print(rekeningela.namaBank);
@@ -21,22 +21,22 @@ void main() {
   rekeningela.ceksaldo();
   print('---------------------');
 
-  RekeningBank rekeningKaris = new RekeningBank(
-    namaPemilik: 'Karisma',
+  RekeningBank rekeningrusdy = new RekeningBank(
+    namaPemilik: 'rusdy',
     namaBank: 'Bank Syariah',
     saldo: 15000000,
   );
 
-  print(rekeningKaris.getPemilik);
-  print(rekeningKaris.getBank);
-  print(rekeningKaris.saldo);
-  rekeningKaris.setSaldo = 25000000;
-  print(rekeningKaris.saldo);
-  rekeningKaris.setNamaPemilik = 'Elana Karismaaaa';
-  rekeningKaris.setNamaBank = 'BCA';
-  print(rekeningKaris.getPemilik);
-  print(rekeningKaris.getBank);
-  print(rekeningKaris.getSaldo);
+  print(rekeningrusdy.getPemilik);
+  print(rekeningrusdy.getBank);
+  print(rekeningrusdy.saldo);
+  rekeningrusdy.setSaldo = 25000000;
+  print(rekeningrusdy.saldo);
+  rekeningrusdy.setNamaPemilik = 'novanaaa';
+  rekeningrusdy.setNamaBank = 'BCA';
+  print(rekeningrusdy.getPemilik);
+  print(rekeningrusdy.getBank);
+  print(rekeningrusdy.getSaldo);
   print('---------------------');
 
   // membuat objek baru untuk multiple constructor
