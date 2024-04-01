@@ -9,13 +9,13 @@ class PageDua extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Container(
-            margin: EdgeInsets.only(left: 0.0, top: 20, right: 0, bottom: 0),
-            padding: EdgeInsets.only(left: 0, top: 270.0, right: 0, bottom: 0),
+            margin: EdgeInsets.only(left: 0.0, top: 0, right: 0, bottom: 0),
+            padding: EdgeInsets.only(left: 0, top: 20.0, right: 0, bottom: 0),
             child: Column(
               children: <Widget>[
                 Image(
                   image: AssetImage('assets/images/logo.png'),
-                  height: 100,
+                  height: 90,
                 ),
                 SizedBox(height: 10),
                 Text(
@@ -25,7 +25,14 @@ class PageDua extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.blue,
                   ),
-                )
+                ),
+                SizedBox(height: 20), // Jarak antara teks dan tombol navigasi kembali
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context); // Navigasi kembali ke halaman pertama
+                  },
+                  child: Text("Kembali"),
+                ),
               ],
             ),
           ),
