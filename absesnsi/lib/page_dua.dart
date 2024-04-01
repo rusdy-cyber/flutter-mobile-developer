@@ -9,8 +9,8 @@ class PageDua extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Container(
-            margin: EdgeInsets.only(left: 0.0, top: 0, right: 0, bottom: 0),
-            padding: EdgeInsets.only(left: 0, top: 20.0, right: 0, bottom: 0),
+            margin: EdgeInsets.all(0),
+            padding: EdgeInsets.only(top: 20.0),
             child: Column(
               children: <Widget>[
                 Image(
@@ -19,14 +19,80 @@ class PageDua extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "Page Dua",
+                  "Selamat Datang",
                   style: TextStyle(
                     fontSize: 23.0,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+                    color: const Color.fromARGB(255, 34, 35, 36),
                   ),
                 ),
-                SizedBox(height: 20), // Jarak antara teks dan tombol navigasi kembali
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "Di ",
+                      style: TextStyle(
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black, // Warna teks hitam
+                      ),
+                    ),
+                    Text(
+                      "Presensi",
+                      style: TextStyle(
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue, // Warna teks biru
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10),
+                Text(
+                  "Hallo, silahkan masuk untuk melanjutkan",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    color: Color.fromRGBO(160, 164, 168, 0.745),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: Column(
+                    children: [
+                      TextField(
+                        decoration: InputDecoration(
+                          labelText: 'Nama Pengguna',
+                          border: OutlineInputBorder(),
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          labelText: 'Kata Sandi',
+                          border: OutlineInputBorder(),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton(
+                    onPressed: () {
+                      // Aksi saat tombol "Lupa Password" ditekan
+                    },
+                    child: Text(
+                      "Lupa Password ?",
+                      style: TextStyle(
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue, // Warna teks biru
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 60), // Jarak antara teks dan tombol navigasi kembali
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context); // Navigasi kembali ke halaman pertama
