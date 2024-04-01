@@ -112,7 +112,39 @@ class PageDua extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 60), // Jarak antara teks dan tombol navigasi kembali
+                Text(
+                  "Masuk menggunakan sidik jari",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    color: Color.fromARGB(255, 73, 75, 77)
+                ),),
+                SizedBox(height: 20),
+                Image(
+                  image: AssetImage('assets/images/sidik_jari.png'),
+                  height: 40,
+                ),
+                SizedBox(height: 60),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "Belum punya akun?",
+                      style: TextStyle(
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black, // Warna teks hitam
+                      ),
+                    ),
+                    Text(
+                      "Daftar",
+                      style: TextStyle(
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
+                        color:  Color.fromARGB(255, 162, 83, 218), // Warna teks biru
+                      ),
+                    ),
+                  ],
+                ), // Jarak antara teks dan tombol navigasi kembali
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context); // Navigasi kembali ke halaman pertama
