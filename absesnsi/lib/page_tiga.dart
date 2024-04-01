@@ -17,7 +17,7 @@ class PageTiga extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Text(
-                'Ini adalah Halaman Tiga',
+                'page ke tiga masih belum',
                 style: TextStyle(fontSize: 20),
               ),
               ElevatedButton(
