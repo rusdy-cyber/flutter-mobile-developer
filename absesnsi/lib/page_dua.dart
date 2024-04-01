@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'page_tiga.dart';
 
 class PageDua extends StatelessWidget {
   const PageDua({Key? key}) : super(key: key);
@@ -87,8 +88,27 @@ class PageDua extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 15.0,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue, // Warna teks biru
+                        color: Color.fromARGB(255, 162, 83, 218), // Warna teks biru
                       ),
+                    ),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PageTiga()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 26, 114, 196), // Mengubah warna latar belakang langsung
+                  ),
+                  child: Text(
+                    "Masuk",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                 ),
