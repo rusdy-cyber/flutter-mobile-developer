@@ -43,5 +43,14 @@ https://github.com/rusdy-cyber/mobile-developer.git
 - melakukan `penambahan system environment variables pada bin flutter di bagian path system` pada setting computer/pc
 
 ### aplikasi absensi
-gambar page 1
- <img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page1.png" width="300px">
+`gambar page 1`
+
+<img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page1.png" width="300px">
+
+`gambar page 2`
+
+<img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page2.png" width="300px">
+
+`gambar page 3`
+
+<img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page3.png" width="300px">
