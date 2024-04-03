@@ -63,6 +63,8 @@ flutter:
     - assets/images/payment.png
     - assets/images/logo.png
     - assets/images/sidik_jari.png
+    - assets/images/img_clip_path_group.png
+    - assets/images/icon.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

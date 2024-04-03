@@ -1,33 +1,33 @@
 import 'package:flutter/material.dart';
+import 'page_empat.dart';
 
 class PageTiga extends StatelessWidget {
-  const PageTiga({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Halaman Tiga'),
+        title: Text('Halaman Tiga ya'),
       ),
       body: Center(
-        child: Container(
-          padding: EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Text(
-                'page ke tiga masih belum',
-                style: TextStyle(fontSize: 20),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context); // Kembali ke halaman sebelumnya (halaman dua)
-                },
-                child: Text('Kembali ke Halaman Dua'),
-              ),
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Ini adalah Halaman ke Tiga',
+              style: TextStyle(fontSize: 24),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                // Navigasi ke halaman empat
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PageEmpat()),
+                );
+              },
+              child: Text('Ke Halaman Empat'),
+            ),
+          ],
         ),
       ),
     );
