@@ -44,4 +44,4 @@ https://github.com/rusdy-cyber/mobile-developer.git
 
 ### aplikasi absensi
 
-<img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page1.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page2.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page3.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page4.png" width="300px">img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page5.png" width="300px">
+<img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page1.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page2.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page3.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page4.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/absesnsi/gambar/page5.png" width="300px">
