@@ -164,17 +164,49 @@ class PageEmpat extends StatelessWidget {
               alignment: Alignment.center,
               child: TextButton(
                 onPressed: () {
-                  // Aksi saat tombol "absensi" ditekan
+                  // Menampilkan dialog alert
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: Text("Persensi Masuk"),
+                        contentPadding:
+                            EdgeInsets.zero, // Menghapus padding konten
+                        content: IntrinsicHeight(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                'assets/images/icon.png',
+                                width: 50,
+                                height: 50,
+                              ),
+                              SizedBox(height: 10),
+                              Text("Csan untuk absensi"),
+                            ],
+                          ),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .pop(); // Menutup dialog alert
+                            },
+                            child: Text("OK"),
+                          ),
+                        ],
+                      );
+                    },
+                  );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 26, 114, 196),
-                ),
+                    backgroundColor: Color.fromARGB(255, 66, 41, 224)),
                 child: Text(
-                  "Tekan untuk Persensi keluar",
+                  "Tekan untuk absesnsi keluar",
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 235, 235, 235),
+                    color: Color.fromARGB(255, 255, 255, 255),
                   ),
                 ),
               ),
