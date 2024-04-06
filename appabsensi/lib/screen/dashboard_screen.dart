@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -116,6 +118,7 @@ class Dasboard extends StatelessWidget {
                     ),
                     color: Colors.white,
                     child: Padding(
+                      // ignore: prefer_const_constructors
                       padding: EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -267,6 +270,181 @@ class Dasboard extends StatelessWidget {
             ),
             const SizedBox(
               height: 10,
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Card(
+                    clipBehavior: Clip
+                        .antiAlias, // This ensures the image is clipped to the card's shape
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          10), // If you want rounded corners
+                    ),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage(
+                              'assets/images/bg_izin.png'), // Replace with your image asset
+                          fit: BoxFit
+                              .cover, // This will fill the container's bounds with the image
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              'Izin Absen',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 22,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                              height: 10), // Spacer between text and button
+                          Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 16.0),
+                            child: Text(
+                              'Halo nisa :) Halo nisanya',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
+                              overflow: TextOverflow
+                                  .visible, // Atur overflow ke visible agar teks melebihi batas tetap ditampilkan
+                              maxLines: 2, // Atur maksimal 2 baris untuk teks
+                            ),
+                          ),
+
+                          SizedBox(
+                              height: 20), // Spacer between text and button
+                          Center(
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 16.0),
+                              child: ElevatedButton(
+                                onPressed: () {
+                                  // Add your button functionality here
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(
+                                        10.0), // Atur nilai border radius sesuai keinginan
+                                  ),
+                                  // Atur warna background button di sini jika diperlukan
+                                ),
+                                child: Text(
+                                  'Ajukan Izin',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors
+                                        .black, // Atur warna teks menjadi hitam
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(height: 10), // Spacer at the end
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Expanded(
+                  child: Card(
+                    clipBehavior: Clip
+                        .antiAlias, // This ensures the image is clipped to the card's shape
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          10), // If you want rounded corners
+                    ),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage(
+                              'assets/images/bg_cuti.png'), // Replace with your image asset
+                          fit: BoxFit
+                              .cover, // This will fill the container's bounds with the image
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              'Izin Cuti',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 22,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                              height: 10), // Spacer between text and button
+                          Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 16.0),
+                            child: Text(
+                              'Halo nisa :) Halo nisanya',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
+                              overflow: TextOverflow
+                                  .visible, // Atur overflow ke visible agar teks melebihi batas tetap ditampilkan
+                              maxLines: 2, // Atur maksimal 2 baris untuk teks
+                            ),
+                          ),
+
+                          SizedBox(
+                              height: 20), // Spacer between text and button
+                          Center(
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 16.0),
+                              child: ElevatedButton(
+                                onPressed: () {
+                                  // Add your button functionality here
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(
+                                        10.0), // Atur nilai border radius sesuai keinginan
+                                  ),
+                                  // Atur warna background button di sini jika diperlukan
+                                ),
+                                child: Text(
+                                  'Ajukan Cuti',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors
+                                        .black, // Atur warna teks menjadi hitam
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(height: 10), // Spacer at the end
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
