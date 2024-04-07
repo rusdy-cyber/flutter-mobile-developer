@@ -19,7 +19,14 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Dasboard(),
+      initialRoute: '/splash', // Set halaman awal aplikasi
+      routes: {
+        '/splash': (context) => LoadingScreen(),
+        '/login': (context) => screenlogin(),
+        '/dashboard': (context) => Dasboard(), // Tambahkan rute untuk halaman dashboard
+      },
     );
   }  
 }
+
+

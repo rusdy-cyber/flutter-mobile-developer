@@ -1,6 +1,7 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -244,35 +245,175 @@ class Dasboard extends StatelessWidget {
                 // menampilkan dialog
                 showDialog(
                   context: context,
-                  builder: (BuildContext context){
+                  builder: (BuildContext context) {
                     return AlertDialog(
                       title: Text("Persensi Masuk"),
-                      contentPadding: EdgeInsets.zero,
-                      content: IntrinsicHeight(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                    'assets/images/user_profile.png',
-                              width: 50,
-                              height: 50,
-                            ),
-                            SizedBox(height: 10,),
-                            Text("Csan untuk absensi"),
-                          ],
+                      titlePadding:
+                          EdgeInsets.only(left: 20, top: 20, right: 20),
+                      contentPadding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      content: Container(
+                        width: MediaQuery.of(context).size.width,
+                        child: SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(width: 20),
+                                  Image.asset(
+                                    'assets/images/calender.png',
+                                    width: 30,
+                                    height: 30,
+                                  ),
+                                  SizedBox(width: 10),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Tanggal Masuk",
+                                        style: GoogleFonts.lexend(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                          color: const Color(0xFF101317),
+                                        ),
+                                      ),
+                                      Text(
+                                        "Selasa, 23 Agustus 2023",
+                                        style: GoogleFonts.lexend(
+                                          fontSize: 14,
+                                          color: const Color(0xFF101317),
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                              SizedBox(height: 20),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(width: 20),
+                                  Image.asset(
+                                    'assets/images/jam.png',
+                                    width: 30,
+                                    height: 30,
+                                  ),
+                                  SizedBox(width: 10),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Jam Masuk",
+                                        style: GoogleFonts.lexend(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                          color: const Color(0xFF101317),
+                                        ),
+                                      ),
+                                      Text(
+                                        "07:03:23",
+                                        style: GoogleFonts.lexend(
+                                          fontSize: 14,
+                                          color: const Color(0xFF101317),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 40),
+                              Text(
+                                "Foto selfie di area kampus",
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Color.fromARGB(255, 105, 101, 101),
+                                ),
+                              ),
+                              SizedBox(height: 20),
+                              Center(
+                                child: FractionallySizedBox(
+                                  // Menggunakan FractionallySizedBox untuk mengatur lebar
+                                  widthFactor: 0.9, // Faktor lebar 90%
+                                  child: InkWell(
+                                    onTap: () {
+                                      // Tambahkan fungsionalitas yang diinginkan saat card ditekan di sini
+                                    },
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        side: BorderSide(
+                                            color: Colors.grey, width: 1.0),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Image.asset(
+                                              'assets/images/kamera.png',
+                                              width: 50,
+                                              height: 50,
+                                            ),
+                                            SizedBox(height: 10),
+                                            Text(
+                                              "ambil gambar",
+                                              style: TextStyle(
+                                                fontSize: 18,
+                                                color: Color.fromARGB(
+                                                    255, 105, 101, 101),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                            ],
+                          ),
                         ),
                       ),
                       actions: [
-                    TextButton(
-                      onPressed: () {
-                        Navigator.of(context).pop(); // Menutup dialog alert
-                      },
-                      child: Text("OK"),
-                    ),
-                  ],
+                        Center(
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 16.0),
+                            child: ElevatedButton(
+                              onPressed: () {
+                                // Add your button functionality here
+                              },
+                              style: ElevatedButton.styleFrom(
+                                minimumSize: const Size(double.infinity, 50),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                backgroundColor: Color(0xFF12A3DA),
+                              ),
+                              child: Text(
+                                'Hadir',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromARGB(255, 252, 252, 252),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
                 );
-              },
-              );
               },
               style: ElevatedButton.styleFrom(
                   minimumSize:
@@ -344,10 +485,10 @@ class Dasboard extends StatelessWidget {
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 16.0),
                             child: Text(
-                              'Halo nisa :) Halo nisanya',
+                              'isi form untuk mengajukan absen',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 18,
+                                fontSize: 15,
                               ),
                               overflow: TextOverflow
                                   .visible, // Atur overflow ke visible agar teks melebihi batas tetap ditampilkan
@@ -431,10 +572,10 @@ class Dasboard extends StatelessWidget {
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 16.0),
                             child: Text(
-                              'Halo nisa :) Halo nisanya',
+                              'isi form untuk mengajukan cuti ya',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 18,
+                                fontSize: 15,
                               ),
                               overflow: TextOverflow
                                   .visible, // Atur overflow ke visible agar teks melebihi batas tetap ditampilkan
@@ -463,8 +604,8 @@ class Dasboard extends StatelessWidget {
                                   'Ajukan Cuti',
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: Colors
-                                        .black, // Atur warna teks menjadi hitam
+                                    color: Color.fromARGB(255, 172, 63,
+                                        187), // Atur warna teks menjadi hitam
                                   ),
                                 ),
                               ),
