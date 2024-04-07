@@ -1,5 +1,6 @@
 // ignore_for_file: depend_on_referenced_packages
 
+import 'package:appabsensi/screen/riwayat_absen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -92,7 +93,12 @@ class Dasboard extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => riwayat()),
+                    );
+                  },
                   child: Text(
                     'Rekap Absensi',
                     style: GoogleFonts.manrope(
