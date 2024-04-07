@@ -21,7 +21,7 @@ class screenlogin extends StatelessWidget{
                   children: [
                   //Logo aplikasi
                   Image.asset(
-                    'assets/images/logo_polbeng.png',
+                    'assets/images/logo.png',
                     height: 128,
                   ),
                   const SizedBox(height: 10,),

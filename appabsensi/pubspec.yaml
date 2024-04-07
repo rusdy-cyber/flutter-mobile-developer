@@ -26,5 +26,6 @@ flutter:
   assets:
     - assets/images/
     - assets/svgs/
+    assets/images/kamera.png
 
   # see https://flutter.dev/custom-fonts/#from-packages
