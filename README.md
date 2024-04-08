@@ -42,7 +42,7 @@ https://github.com/rusdy-cyber/mobile-developer.git
 
 - melakukan `penambahan system environment variables pada bin flutter di bagian path system` pada setting computer/pc
 
-### aplikasi absensi
+### aplikasi absensi untuk folder appabsensi
 
 <img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/appabsensi/gambar/simulasi.gif" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/appabsensi/gambar/loading.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/appabsensi/gambar/login.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/appabsensi/gambar/dasboard.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/appabsensi/gambar/alert.png" width="300px"><img src="https://github.com/rusdy-cyber/mobile-developer/blob/main/appabsensi/gambar/riwayat.png" width="300px">
 
