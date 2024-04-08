@@ -96,7 +96,7 @@ class Dasboard extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => riwayat()),
+                      MaterialPageRoute(builder: (context) => Riwayat()),
                     );
                   },
                   child: Text(
